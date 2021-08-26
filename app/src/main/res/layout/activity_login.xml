@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="15dp"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#CD2A2A"
+        app:layout_constraintVertical_bias="0.1"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="center"
+        android:text="Đăng Nhập"
+        android:id="@+id/TvTieuDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_marginTop="25dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_baseline_person_outline_24"
+        app:layout_constraintBottom_toTopOf="@id/edtMatKhau"
+        app:layout_constraintTop_toBottomOf="@id/TvTieuDe"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="Username"
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@id/btnDangNhap"
+        app:layout_constraintTop_toBottomOf="@id/edtName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:hint="PassWord"
+        android:id="@+id/edtMatKhau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <CheckBox
+
+            app:layout_constraintBottom_toBottomOf="@id/edtMatKhau"
+            app:layout_constraintRight_toRightOf="@id/edtMatKhau"
+            app:layout_constraintTop_toTopOf="@id/edtMatKhau"
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <Button
+        app:layout_constraintBottom_toTopOf="@id/btnDangKy"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#4CAF50"
+        app:backgroundTint="@null"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/edtMatKhau"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Đăng Nhập"
+        android:id="@+id/btnDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#CA0EBE"
+        app:backgroundTint="@null"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/btnDangNhap"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Đăng ký"
+        android:id="@+id/btnDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

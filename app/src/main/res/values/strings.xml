@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">information</string>
+    <string name="logo">Đăng Ký Tài Khoản</string>
+    <string name="FullName">Nhập họ và tên</string>
+    <string name="DangKy">Đăng Ký</string>
+    <string name="RePass">Nhập lại mật khẩu</string>
+    <string name="PassWord">Nhập mật khẩu</string>
+    <string name="demucthongtinkhach">Thông tin khách hàng vừa đăng ký</string>
+</resources>

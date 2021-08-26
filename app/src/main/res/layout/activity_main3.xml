@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <TextView
+
+        android:textColor="#BD2121"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:text="Bạn muốn ăn gì ??"
+        android:id="@+id/TvTieuDe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textSize="25dp"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="#EC3CE1"
+        app:backgroundTint="@null"
+        android:background="@drawable/botron"
+        app:layout_constraintBottom_toTopOf="@id/btnDrink"
+        app:layout_constraintTop_toBottomOf="@id/TvTieuDe"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Chọn Món Ăn"
+        android:id="@+id/btnFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:textSize="29sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFEB3B"
+        app:backgroundTint="@null"
+        android:background="@drawable/botron"
+        app:layout_constraintBottom_toTopOf="@id/btnClose"
+        app:layout_constraintTop_toBottomOf="@id/btnFood"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Chọn Thức Uống"
+        android:id="@+id/btnDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        android:backgroundTint="#4CAF50"
+        app:backgroundTint="@null"
+        android:background="@drawable/botron"
+        app:layout_constraintTop_toBottomOf="@id/btnDrink"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Thoát"
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textColor="#2196F3"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/btnClose"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Món ăn bạn chọn là :"
+        android:id="@+id/TvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:backgroundTint="#FF5722"
+        app:backgroundTint="@null"
+        android:background="@drawable/botron"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Clear"
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+
+        android:layout_marginTop="15dp"
+        android:textColor="#4CAF50"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/TvContent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/TvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
